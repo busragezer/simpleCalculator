@@ -11,9 +11,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var firstText: UITextField!
     @IBOutlet weak var secondText: UITextField!
     @IBOutlet weak var resultLabel: UILabel!
-    
+
     var result = 0
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         }
 
     }
-   
+
     @IBAction func minusClicked(_ sender: Any) {
         if let firstNumber = Int(firstText.text!) {
             if let secondNumber = Int(secondText.text!) {
@@ -41,7 +41,7 @@ class ViewController: UIViewController {
             }
         }
     }
-    
+
     @IBAction func multiplyClicked(_ sender: Any) {
         if let firstNumber = Int(firstText.text!) {
             if let secondNumber = Int(secondText.text!) {
@@ -51,7 +51,7 @@ class ViewController: UIViewController {
             }
         }
     }
-    
+
     @IBAction func divideClicked(_ sender: Any) {
         if let firstNumber = Int(firstText.text!) {
             if let secondNumber = Int(secondText.text!) {
